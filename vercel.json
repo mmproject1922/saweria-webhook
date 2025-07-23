@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/webhook.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/webhook/topup", "dest": "api/webhook.py" }
+  ]
+}
